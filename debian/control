@@ -5,8 +5,8 @@ Maintainer: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
 Build-Depends: debhelper (>= 8.0.0), libpcap-dev
 Standards-Version: 3.9.3
 Homepage: http://hexinject.sourceforge.net/
-Vcs-Git: git://git.kali.org/packages/hexinject.git
-Vcs-Browser: http://git.kali.org/gitweb/?p=packages/hexinject.git;a=summary
+Vcs-Git: git://github.com/ParrotSec/hexinject.git
+Vcs-Browser: https://github.com/ParrotSec/hexinject
 
 Package: hexinject
 Architecture: any
