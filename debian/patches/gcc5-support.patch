@@ -1,0 +1,20 @@
+Description: fix the build with gcc5 (imported from kali)
+ Build failed with "undefined reference to `field_print'" (inline
+ function): add option -std=gnu89 to the Makefile.
+Author: Sophie Brun <sophie@freexian.com>
+Last-Update: 2016-03-10
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/Makefile
++++ b/Makefile
+@@ -1,7 +1,7 @@
+ all:
+-	gcc -o hexinject hexinject.c -lpcap
+-	gcc -o prettypacket prettypacket.c
+-	gcc -o hex2raw hex2raw.c
++	gcc -std=gnu89 -o hexinject hexinject.c -lpcap
++	gcc -std=gnu89 -o prettypacket prettypacket.c
++	gcc -std=gnu89 -o hex2raw hex2raw.c
+ 
+ clean:
+ 	rm -f hexinject prettypacket hex2raw *~

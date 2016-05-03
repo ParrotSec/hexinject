@@ -1,0 +1,22 @@
+Source: hexinject
+Section: net
+Priority: extra
+Maintainer: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
+Build-Depends: debhelper (>= 8.0.0), libpcap-dev
+Standards-Version: 3.9.3
+Homepage: http://hexinject.sourceforge.net/
+Vcs-Git: git://git.kali.org/packages/hexinject.git
+Vcs-Browser: http://git.kali.org/gitweb/?p=packages/hexinject.git;a=summary
+
+Package: hexinject
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, tcl
+Description: Versatile packet injector and sniffer
+ HexInject is a very versatile packet injector and sniffer, 
+ that provide a command-line framework for raw network 
+ access.
+ .
+ It's designed to work together with others command-line 
+ utilities, and for this reason it facilitates the creation 
+ of powerful shell scripts capable of reading, intercepting 
+ and modifying network traffic in a transparent manner.
