@@ -1,1 +1,2 @@
-fix-for-gcc5.patch
+gcc5-support.patch
+escape-sequence.patch
