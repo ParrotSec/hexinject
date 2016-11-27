@@ -148,10 +148,15 @@ int parseopt(int argc, char **argv)
             case 'h': //help
                 usage(stdout, NULL);
 
+            case '\377':
+                break;
+            
             case '?':
             default:
                 usage(stderr, NULL);
         }
+        if(ch == '\377') // Octal escape character sequence EOF. Decimal value 255.
+            break;
     }
     
     // check mode
