@@ -1,3 +1,12 @@
+hexinject (1.5-1parrot3) testing; urgency=medium
+
+  * Add octal escape character '255' (import pull request from Simmesson
+  * Create quilt patch for Simmesson fix
+  * Rebase package source code to meet the dep-14 standard
+  * 
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 27 Nov 2016 02:05:57 +0100
+
 hexinject (1.5-1parrot2) testing; urgency=medium
 
   * make compatible with gcc 5
