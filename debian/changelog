@@ -1,7 +1,0 @@
-hexinject (1.5-1parrot2) testing; urgency=medium
-
-  * make compatible with gcc 5
-  * add missing binaries
-  * fix tcl dependency (thanks kali for the tip)
-
- -- Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>  Wed, 04 May 2016 00:18:19 +0200
